@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+//font
+$manrope-font: "Manrope", sans-serif;
+
+// color
+
+$dark: #0f1515;
+$red: #f84646;
+$white: #fff;
+$black: #030502;
+
+//background
+$background: radial-gradient(
+  118.67% 101.66% at 141.47% 78.12%,
+  #ffffff 0%,
+  rgba(255, 255, 255, 0) 100%
+);
+
+// border-radius
+$borderRadius: 8px;
+
+// letter spacing
+$letterSpacing: 0.2px;
+
+// spacing
+$spacing-sm: 12px;
+$spacing-md: 40px;
+$spacing-lg: 40px;
+$spacing-xl: 64px;
+
+// heights
+$headerHeight: 90px;
+
+// box shadow
+$boxShadow: 0 1px 1px rgba(0, 0, 0, 0.25), 0 2px 2px rgba(0, 0, 0, 0.2),
+  0 4px 4px rgba(0, 0, 0, 0.15), 0 8px 8px rgba(0, 0, 0, 0.1),
+  0 16px 16px rgba(0, 0, 0, 0.05);
+
+// breakpoints
+@mixin breakpoint($point) {
+  @if $point == desktop {
+    // 1440px
+    @media (min-width: 90rem) {
+      @content;
+    }
+  } @else if $point == tablet {
+    // 1024px
+    @media (min-width: 64em) {
+      @content;
+    }
+  } @else if $point == mobile {
+    // 375px
+    @media (min-width: 23.4375em) {
+      @content;
+    }
+  }
+}

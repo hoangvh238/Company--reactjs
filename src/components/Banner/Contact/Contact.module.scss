@@ -1,0 +1,117 @@
+@import "./../../../styles/variables.scss";
+.banner__contact {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    @include breakpoint(mobile) {
+      width: 100%;
+      height: 438px;
+    }
+  
+    @include breakpoint(tablet) {
+      width: 100%;
+      height: 634px;
+    }
+    &__container {
+      display: flex;
+      gap: 10px;
+      flex-direction: column;
+      position: absolute;
+      justify-content: center;
+      align-items: center;
+  
+      @include breakpoint(mobile) {
+        top: 90px;
+        height: 226px;
+        width: 335px;
+      }
+      @include breakpoint(tablet) {
+        width: 645px;
+        height: 314px;
+        top: 160px;
+      }
+  
+      .container__logo {
+        &__user {
+          z-index: 1000;
+          @include breakpoint(mobile) {
+            width: 90px;
+            height: 90px;
+          }
+  
+          @include breakpoint(tablet) {
+            width: 120px;
+            height: 120px;
+          }
+        }
+      }
+  
+      .container__content {
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        gap: 0px;
+  
+        @include breakpoint(mobile) {
+          gap: 12px;
+        }
+  
+        @include breakpoint(tablet) {
+          gap: 20px;
+        }
+  
+        &__tiltle {
+          @include breakpoint(mobile) {
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 42px;
+          }
+  
+          @include breakpoint(tablet) {
+            font-weight: 800;
+            font-size: 48px;
+            line-height: 32px;
+          }
+        }
+  
+        &__depcriptions {
+          font-weight: 500;
+          @include breakpoint(mobile) {
+            font-size: 14px;
+            line-height: 25px;
+          }
+  
+          @include breakpoint(tablet) {
+            font-size: 18px;
+            line-height: 32px;
+          }
+        }
+      }
+  
+      .container__btn {
+        font-weight: 600;
+        line-height: 20px;
+        border-radius: 8px;
+        text-align: center;
+  
+        @include breakpoint(mobile) {
+          margin-top: 20px;
+          width: 124px;
+          height: 42px;
+          padding: 11px 0;
+          font-size: 16px;
+        }
+  
+        @include breakpoint(tablet) {
+          margin-top: 30px;
+          font-size: 24px;
+          width: 204px;
+          height: 70px;
+          padding: 25px 0;
+        }
+      }
+    }
+  }
+  

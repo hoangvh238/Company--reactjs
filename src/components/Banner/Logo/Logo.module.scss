@@ -1,0 +1,18 @@
+.gallery__group {
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__box {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 170px;
+      height: 96px;
+      background: #ffffff;
+      border-radius: 16px;
+      box-shadow: 0px 30px 40px rgba(212, 217, 232, 0.2);
+    }
+  }

@@ -1,0 +1,21 @@
+@import "./../../styles/variables.scss";
+
+.button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-family: 'Manrope';
+    font-weight: 700;
+    letter-spacing: $letterSpacing;
+    font-size: inherit;
+    background: #F84646;
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    &:hover {
+        background: red($color: #b91212);
+        transform: scale(1.1);
+        box-shadow: $boxShadow;
+    }
+}
+   

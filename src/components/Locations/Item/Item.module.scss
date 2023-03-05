@@ -1,0 +1,37 @@
+@import "./../../../styles/variables.scss";
+
+.gallery__item
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 320px;
+    height: 211px;
+
+    &__img
+    {
+        width: 76px;
+        height: 76px;
+        margin-bottom: 10px;
+    }
+
+    &__content
+    {
+        &__tiltle
+        {
+            font-size: 24px;
+            line-height: 33px;
+        
+        }
+
+        &__depcriptions
+        {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 28px;
+            letter-spacing: 0.2px;
+        }
+    }
+
+}
