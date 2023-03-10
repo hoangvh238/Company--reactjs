@@ -1,5 +1,5 @@
 import React from "react";
-import Users from "../../../assets/Image/user.png";
+import Users from "../../../assets/Image/user.svg";
 import Button from "../../../UI/Button/Button";
 import classes from "./Contact.module.scss";
 import Scrolling from "../../Effect/Scrolling";
@@ -31,7 +31,11 @@ function Contact() {
           </p>
         </div>
         <div {...Scrolling("fade-up", "linear")}>
-          <Button className={classes.container__btn}>Bize Ulaşın</Button>
+          <Button
+            className={classes.container__btn}
+          >
+            Bize Ulaşın
+          </Button>
         </div>
       </div>
     </div>

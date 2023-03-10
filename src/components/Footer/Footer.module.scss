@@ -35,19 +35,16 @@
     justify-content: space-between;
 
     @include breakpoint(mobile) {
-      width: 258.61px;
       height: 1027px;
       flex-direction: column;
     }
 
     @include breakpoint(tablet) {
-      width: 906.69px;
       height: 304px;
       flex-direction: row;
     }
 
     @include breakpoint(desktop) {
-      width: 1034px;
       height: 304px;
     }
 

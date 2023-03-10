@@ -1,6 +1,6 @@
 import React from "react";
 import classes from "./Footer.module.scss";
-import Next from "../../../assets/Image/next.png";
+import Next from "../../../assets/Image/next.svg";
 import Scrolling from "../../Effect/Scrolling";
 
 function Footer() {

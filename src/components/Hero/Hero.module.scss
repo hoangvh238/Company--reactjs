@@ -5,6 +5,21 @@
     height: 100vh;
     top: 0;
     left: 0;
+
+    @include breakpoint(mobile)
+    {
+        height: 601px;
+    }
+
+    @include breakpoint(tablet)
+    {
+        height: 647px;
+    }
+
+    @include breakpoint(desktop)
+    {
+        height: 754px;
+    }
 }
 
 .bg {
@@ -30,7 +45,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
     @include breakpoint(mobile)
     {
         background: $background;
@@ -53,7 +67,7 @@
         {
             width: 335px;
             height: 380px;
-            left: 20px;
+            left: auto;
             top: 137px;
         }
         @include breakpoint(tablet)
@@ -138,6 +152,7 @@
         background-color: $white;
         border-radius: 8px;
         justify-content: space-between;
+        align-items: center;
         @include breakpoint(mobile) {
             width: 335px;
             height: 60px;
@@ -153,26 +168,26 @@
         }
         &__input
         {    
+            font-family: $manrope-font;
             border : none;
             font-weight: 400;
             letter-spacing: 0.2px;
+
             @include breakpoint(mobile)
             {
-                
-                width: 194px;
+                font-size: 14px;
                 height: 30px;
                 margin: 15px 0 15px 20px;
             }
             @include breakpoint(tablet)
             {
-                width: 244.63px;
+                font-size: 16px;
                 height: 36px;
                 margin:19px 0 17px 26.9px;
             }
             @include breakpoint(desktop)
             {
                 margin:17.75px 0 17.75px 32px;
-                width: 178px;
                 height: 35.5px;
             }
             &:focus {
@@ -187,7 +202,7 @@
         &__btn
         {
             border-radius: 8px;
-            margin : 5px 5px 5px 0px;
+            margin : 6px;
             font-weight: 700;
            @include breakpoint(mobile)
            {

@@ -1,7 +1,6 @@
 import classes from "./Banner.module.scss";
 import React from "react";
 import Logo from "./Logo/Logo";
-import "aos/dist/aos.css";
 import Scrolling from "../Effect/Scrolling";
 import Contact from "./Contact/Contact";
 

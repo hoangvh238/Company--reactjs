@@ -24,12 +24,8 @@
   
       @include breakpoint(mobile) {
         top: 90px;
-        height: 226px;
-        width: 335px;
       }
       @include breakpoint(tablet) {
-        width: 645px;
-        height: 314px;
         top: 160px;
       }
   
@@ -97,7 +93,7 @@
         text-align: center;
   
         @include breakpoint(mobile) {
-          margin-top: 20px;
+          margin-top: 10px;
           width: 124px;
           height: 42px;
           padding: 11px 0;
@@ -105,7 +101,7 @@
         }
   
         @include breakpoint(tablet) {
-          margin-top: 30px;
+          margin-top: 20px;
           font-size: 24px;
           width: 204px;
           height: 70px;
@@ -114,4 +110,6 @@
       }
     }
   }
+  
+  
   

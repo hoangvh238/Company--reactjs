@@ -22,18 +22,13 @@
 
   &__introduce {
     display: flex;
-
     flex-direction: column;
 
     @include breakpoint(mobile) {
       gap: 20px;
     }
-
-    @include breakpoint(tablet) {
-      gap: 33px;
-    }
     @include breakpoint(desktop) {
-      gap: 60px;
+      gap: 40px;
     }
 
     &__tiltle {
@@ -99,6 +94,10 @@
       @include breakpoint(tablet) {
         width: 160.4px;
         height: 48px;
+        margin-top: 26px;
+      }
+      @include breakpoint(desktop) {
+        margin-top: 40px;
       }
     }
   }

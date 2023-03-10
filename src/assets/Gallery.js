@@ -1,9 +1,9 @@
 //FOOTER
-import Medium from "./Image/MediumLogo.png";
-import LinkDie from "./Image/LinkedinLogo.png";
-import Twitter from "./Image/TwitterLogo.png";
-import Insta from "./Image/InstagramLogo.png";
-import FB from "./Image/FacebookLogo.png";
+import Medium from "./Image/MediumLogo.svg";
+import LinkDie from "./Image/LinkedinLogo.svg";
+import Twitter from "./Image/TwitterLogo.svg";
+import Insta from "./Image/InstagramLogo.svg";
+import FB from "./Image/FacebookLogo.svg";
 
 // training
 import Illutration from "./Image/illutration.jpg";
@@ -11,23 +11,23 @@ import Hacker from "./Image/macbook.jpg";
 
 // location
 
-import Doc from "./Image/doc.png";
-import Start from "./Image/start.png";
-import King from "./Image/king.png";
-import Colum from "./Image/colum.png";
-import Cricle from "./Image/cricle.png";
-import Row from "./Image/row.png";
+import Doc from "./Image/doc.svg";
+import Start from "./Image/start.svg";
+import King from "./Image/king.svg";
+import Colum from "./Image/colum.svg";
+import Cricle from "./Image/cricle.svg";
+import Row from "./Image/row.svg";
 
 // BANER
-import Borusan from "./Image/icon1.png";
-import Ista from "./Image/icon2.png";
-import Book from "./Image/icon3.png";
-import AkBank from "./Image/icon4.png";
-import AkCan from "./Image/icon5.png";
-import ShowAll from "./Image/icon6.png";
-import AkTas from "./Image/icon7.png";
-import Ola from "./Image/icon8.png";
-import Amazone from "./Image/icon9.png";
+import Borusan from "./Image/icon1.svg";
+import Ista from "./Image/icon2.svg";
+import Book from "./Image/icon3.svg";
+import AkBank from "./Image/icon4.svg";
+import AkCan from "./Image/icon5.svg";
+import ShowAll from "./Image/icon6.svg";
+import AkTas from "./Image/icon7.svg";
+import Ola from "./Image/icon8.svg";
+import Amazone from "./Image/icon9.svg";
 
 const footerColumns = [
   {

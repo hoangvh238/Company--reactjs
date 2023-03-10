@@ -33,7 +33,7 @@
        width: 100%;
        display: flex;
        flex-direction: column;
-       position: relative;
+       position: absolute;
 
        &__tiltle
        {
@@ -128,7 +128,7 @@
                 width: 1200px;
                 height: 507px;
                 left: calc((100% - 1200px)/2);
-                top: 460px;
+                top: 406px;
                 justify-content: space-between;
                 gap:85px;
             }
