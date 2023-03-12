@@ -2,6 +2,7 @@
 
 .content {
     &__col {
+      font-family: $inter-font;
       position: relative;
       display: flex;
       flex-direction: column;

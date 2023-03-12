@@ -24,10 +24,10 @@ const Header = () => {
 
   // menu container open
   useEffect(() => {
-    if (size.width > 1023 && menuOpen) {
+    if (menuOpen) {
       setMenuOpen(false);
     }
-  }, [size, menuOpen]);
+  }, [size]);
 
   const handleMenuToggle = () => {
     setMenuOpen((p) => !p);

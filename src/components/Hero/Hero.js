@@ -1,10 +1,6 @@
-import React, { Fragment, useEffect, useState } from "react";
+import React, { Fragment} from "react";
 import Button from "./../../UI/Button/Button";
 import classes from "./Hero.module.scss";
-import mobile from "../../assets/Image/mobile.png";
-import tablet from "../../assets/Image/tablet.png";
-import desktop from "../../assets/Image/desktop.png";
-import useWindowSize from "../../hooks/useWindowSize";
 import Scrolling from "../Effect/Scrolling";
 
 const HomePageContent = () => {
@@ -47,27 +43,12 @@ const HomePageContent = () => {
 };
 
 const Hero = ({ isDynmic, children }) => {
-  const [bgImgSrc, setBgImgSrc] = useState(desktop);
-  const [newBgImgSrc, setNewBgImgSrc] = useState(null);
-  const size = useWindowSize();
-
-  useEffect(() => {
-    if (size.width > 1023) setNewBgImgSrc(desktop);
-    else {
-      setNewBgImgSrc(size.width < 415 ? mobile : tablet);
-    }
-  }, [size]);
-
-  useEffect(() => {
-    if (newBgImgSrc) setBgImgSrc(newBgImgSrc);
-  }, [newBgImgSrc]);
   return (
     <div className={classes.container}>
       <img
         data-aos="zoom-out"
         data-aos-easing="linear"
-        className={classes.bg}
-        style={{ backgroundImage: `url(${bgImgSrc})` }}
+        className={`${classes.bg} bg--trans bg--normal`}
       />
       <div className={classes.hero}>
         <div

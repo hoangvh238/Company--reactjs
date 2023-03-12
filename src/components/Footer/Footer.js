@@ -1,9 +1,54 @@
 import React from "react";
 import classes from "./Footer.module.scss";
-import { getArrayByName } from "../../assets/Gallery";
 import Columm from "./Columm/Columm";
-const footerColumns = getArrayByName("footerColumns");
-const socials = getArrayByName("socials");
+import Medium from "../../assets/Image/MediumLogo.svg";
+import LinkDie from "../../assets/Image/LinkedinLogo.svg";
+import Twitter from "../../assets/Image/TwitterLogo.svg";
+import Insta from "../../assets/Image/InstagramLogo.svg";
+import FB from "../../assets/Image/FacebookLogo.svg";
+
+const footerColumns = [
+  {
+    id: 1,
+    headline: "Çözüm ve Hizmetler",
+    links: [
+      "Yazılım Geliştirme",
+      "Outsourcing",
+      "Kalite ve Süreç Yönetimi",
+      "Danışmanlık",
+      "IoT Destekli Çözümler",
+    ],
+  },
+  {
+    id: 2,
+    headline: "Ürünler",
+    links: [
+      "Eğitim Yönetim Sistemi",
+      "İnsan Sermayesi Yönetim Sistemi",
+      "Müşteri İlişkileri Yönetim Sistemi",
+      "İçerik Yönetim Sistemi",
+    ],
+  },
+  {
+    id: 3,
+    headline: "Kurumsal",
+    links: ["Hakkımızda", "Belge ve Yetkinlikler", "İş Ortakları"],
+  },
+  {
+    id: 4,
+    headline: "İletişim",
+    links: ["Bilgi İstek Formu", "Uzman Talep Formu"],
+  },
+];
+
+const socials = [
+  { icon: Medium },
+  { icon: LinkDie },
+  { icon: Twitter },
+  { icon: Insta },
+  { icon: FB },
+];
+
 
 const Footer = () => {
   return (

@@ -71,26 +71,7 @@ const socials = [
   { icon: FB },
 ];
 
-const all = [
-  { id: 1, group: 1, pic: Borusan },
-  { id: 2, group: 2, pic: Ista },
-  { id: 3, group: 2, pic: Book },
-  { id: 4, group: 3, pic: AkBank },
-  { id: 5, group: 3, pic: AkCan },
-  { id: 6, group: 3, pic: ShowAll },
-  { id: 7, group: 4, pic: AkTas },
-  { id: 8, group: 4, pic: Ola },
-  { id: 9, group: 5, pic: Amazone },
-];
 
-const custom = [
-  { id: 1, group: 1, pic: Borusan },
-  { id: 2, group: 1, pic: Ista },
-  { id: 3, group: 2, pic: Book },
-  { id: 4, group: 3, pic: AkBank },
-  { id: 5, group: 4, pic: AkCan },
-  { id: 6, group: 5, pic: ShowAll },
-];
 
 const LocationData = [
   {
@@ -161,11 +142,6 @@ export function getArrayByName(name) {
       return footerColumns;
     case "socials":
       return socials;
-
-    case "all":
-      return all;
-    case "custom":
-      return custom;
 
     case "LocationData":
       return LocationData;

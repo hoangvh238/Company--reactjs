@@ -89,6 +89,7 @@
       @include breakpoint(mobile) {
         width: 343px;
         height: 48px;
+        margin-top : 20px;
       }
 
       @include breakpoint(tablet) {

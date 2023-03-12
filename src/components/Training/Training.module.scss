@@ -8,20 +8,23 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
+
     @include breakpoint(mobile)
     {
         min-height:1699px ;
+        padding-top : 92px;
     }
     
     @include breakpoint(tablet)
     {
         min-height: 1188px;
+        padding-top : 100px;
     }
 
     @include breakpoint(desktop)
     {
         min-height: 1400px;
+        padding-top : 160px;
     }
 
     &__box

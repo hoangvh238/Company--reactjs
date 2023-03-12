@@ -1,15 +1,15 @@
-import React, { useEffect } from "react";
+import React from "react";
 import classes from "./Container.module.scss";
 import Button from "../../../UI/Button/Button";
 import "aos/dist/aos.css";
 import Scrolling from "../../Effect/Scrolling";
 
-function Container({ id, tiltle, depcripntions, pic }) {
+function Container({tiltle, depcripntions, pic}) {
   return (
     <div
       className={classes.content}
       key={pic}
-      data-aos={id % 2 == 0 ? "fade-left" : "fade-right"}
+      {...Scrolling("fade-up", "linear")}
     >
       <div className={classes.content__introduce}>
         <h1
