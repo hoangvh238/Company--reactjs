@@ -7,8 +7,8 @@ import "aos/dist/aos.css";
 
 function Contact() {
   return (
-    <div className={classes.banner__contact}>
-      <div className={classes.banner__contact__container}>
+    <div className={classes.contact}>
+      <div className={classes.contact__container}>
         <div
           className={classes.container__logo}
           {...Scrolling("zoom-in", "linear")}
