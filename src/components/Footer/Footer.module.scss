@@ -5,11 +5,14 @@
   display: flex;
   background: $red;
   position: absolute;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer {
   width: 100%;
   display: flex;
+  max-width: 1440px;
   flex-direction: column;
 
   @include breakpoint(mobile) {

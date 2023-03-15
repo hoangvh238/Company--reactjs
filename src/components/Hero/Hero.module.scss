@@ -2,20 +2,21 @@
 
 .container {
   position: relative;
-  height: 100vh;
-  top: 0;
-  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   @include breakpoint(mobile) {
-    height: 601px;
+    min-height: 601px;
+
   }
 
   @include breakpoint(tablet) {
-    height: 647px;
+    min-height: 647px;
   }
 
   @include breakpoint(desktop) {
-    height: 754px;
+    min-height: 754px;
   }
 }
 
@@ -44,9 +45,8 @@
 
 .hero {
   position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
+  max-width: 1440px;
   height: 100%;
   display: flex;
   align-items: center;
