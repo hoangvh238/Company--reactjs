@@ -1,31 +1,35 @@
 import { Fragment } from "react";
 import { Route, Switch } from "react-router";
-import Footer from "./components/Footer/Footer";
-import Header from "./components/Header/Header";
-import Contact from "./pages/Contact";
-import Home from "./pages/Home";
-import LearnMore from "./pages/LearnMore";
-import LocationsPage from "./pages/LocationsPage";
-import TrainingZone from "./pages/TrainingZone";
+import Footer from "@components/Footer/index";
+import Header from "@components/Header/index";
+import Banner from "@components/Banner/index";
+import Hero from "@components/Hero/index";
+import Locations from "@components/Locations/index";
+import Training from "@components/Training/index";
 function App() {
     return (
         <Fragment>
             <Header />
             <Switch>
                 <Route path="/locations">
-                    <LocationsPage />
+                    <Locations page={true} />
                 </Route>
                 <Route path="/contact">
-                    <Contact/>
+                    <Hero isDynmic >CONTACT US</Hero>
+                    <Banner></Banner>
                 </Route>
                 <Route path="/training">
-                    <TrainingZone></TrainingZone>
+                    <Hero isDynmic>Training</Hero>
+                    <Training></Training>
                 </Route>
                 <Route path="/learnmore">
-                    <LearnMore />
+                    <Hero isDynmic>Learn More</Hero>
                 </Route>
                 <Route exact path="/">
-                    <Home />
+                    <Hero />
+                    <Locations />
+                    <Training></Training>
+                    <Banner></Banner>
                 </Route>
             </Switch>
             <Footer></Footer>

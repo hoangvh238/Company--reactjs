@@ -1,0 +1,63 @@
+@import '@styles/variables.scss';
+@import '@styles/base.scss';
+
+
+.container {
+    position: relative;
+    width: 100%;
+}
+
+.training{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    @include breakpoint(mobile)
+    {
+        min-height:1699px ;
+        padding-top : 92px;
+    }
+    
+    @include breakpoint(tablet)
+    {
+        min-height: 1188px;
+        padding-top : 100px;
+    }
+
+    @include breakpoint(desktop)
+    {
+        min-height: 1400px;
+        padding-top : 160px;
+    }
+
+    &__box
+    {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+  
+
+        @include breakpoint(mobile)
+        {
+            width: 343px;
+            height: 1537px;
+            gap : 55px;
+        }
+
+        @include breakpoint(tablet)
+        { 
+            width: 908px;
+            height: 928px;
+            gap : 120px;
+        }
+
+        @include breakpoint(desktop)
+        {
+            width: 1200px;
+            height: 1080px;
+        }
+
+      
+    }
+}
